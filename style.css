@@ -1,0 +1,240 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling for Main Navigation Bar */
+
+.navbar {
+	font-size: 14px;
+	background-color: #ffff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 10px;
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.nav-links,
+.logo {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.logo {
+	display: inline-block;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: rgba(255, 5, 155, 0.8);
+	font-size: 24px;
+}
+
+.active {
+	display: block;
+}
+
+/* Media Queries for Main Navigation Bar */
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+	}
+	.main-nav {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.main-nav li {
+		margin: 0;
+	}
+	.nav-links {
+		margin-left: 40px;
+	}
+	.logo {
+		margin-top: 0;
+	}
+	.navbar-toggle {
+		display: none;
+	}
+	.logo:hover,
+	.nav-links:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+}
+
+/* Styling for Home Page */
+
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+.welcome-header {
+  min-height: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  height: 100vw;
+  justify-content: center;
+}
+
+.home-container {
+width: 90%;
+margin: auto;
+padding: 10px;
+justify-content: center;
+display: flex;
+height: 100vw;
+
+}
+
+.hero {
+width: 80%;
+margin: auto;
+padding: 10px;
+
+
+}
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 2;
+  min-height: 3500px;
+  background: var(--background-color)
+    no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: var(--primary-color);
+}
+
+.page-main div {
+  max-width: 500px;
+}
+
+.page-main h1 {
+  margin-bottom: 10px;
+}
+
+.page-main p + p {
+  margin-top: 5px;
+}
+
+
+/* Media Queries - Home Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .page-header .cta-contact {
+    order: 1;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-main {
+    padding-left: 90px;
+  }
+
+  
+ .footer-container {
+   width: 100%;
+   margin: auto;
+ }
+/* Footer Social icons */
+
+#footer-social-icons {
+  padding: 40px 0;
+  background-color: #dedede;
+}
+
+#footer-social-icons a {
+  color: rgb(118, 0, 118);
+}
+
+ /* Scaling Requirements for Different Browsers */
+
+#footer-social-icons .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#footer-social-icons .social {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*  Footer Social Icon Hover Effects */
+
+#footer-social-icons #social-gh:hover {
+  color: #000000;
+}
+
+#footer-social-icons #social-tw:hover {
+  color: #4099FF;
+}
+#footer-social-icons #social-li:hover {
+  color: #0077b5;
+}
+
+#footer-social-icons #social-gp:hover {
+  color:  /* Browser Variations: */;
+
+}
+
+/* Footer ––––––––––––––––––––––––––––––– */
+
+.ft-copyright {
+  text-align: center;
+  padding: 0;
+  font-size: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+
+}
