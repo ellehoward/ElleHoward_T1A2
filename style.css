@@ -1,194 +1,83 @@
-
-/* Main Navigation Menu Styling */
-
-.header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.header ul {
+* {
   margin: 0;
   padding: 0;
-  list-style: none;
-  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+    
+}    
+html, body, {
   background-color: #fff;
-}
-
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* Menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* Menu Button Styling */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
   height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* Responsive Menu Actions */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 250px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* Media 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
-/* Home Page Content Flexbox */
-
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
   text-align: center;
-  padding-top: 50px;
+}
+  html {
+  box-sizing: border-box;
 }
 
-.wrapper> * {
+*, *::before, *::after {
+  box-sizing: inherit;
+
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #333;
   padding: 10px;
-  margin: 10px;
-  flex: 1 100%;
-  border-radius: 10px;
+
 }
 
-.main {
-  padding-inline-end: 150px;
-  text-align: left;
-  background: #fcfcfc;
-  font-size: 24px;
+h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 2em;
+}
+
+h3 {
+  font-size: 20px;
+  text-align:center;
+  line-height: 2em;
+ 
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+  line-height: 2em;
   
 }
 
-.main h1 {
-  font-family: 'Open Sans', sans-serif;
-  background: #fcfcfc;
-  font-size: 16px;
+.home-container {
+  width: 100%;
+  height: 70vh;
+  padding: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
-.main h3 {
-  font-family: 'Open Sans', sans-serif;
-  background: #fcfcfc;
-  font-size: 20px;
-}
-.main p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+
+.home-box-intro {
+  width: 50%;
 }
 
 .letschat {
-  font-family: 'Open Sans', sans-serif;
+  width: 40vw;
+  margin: auto;
   outline: 0;
-  grid-gap: 8px;
-  align-items: center;
-  background-color: #ff90e8;
-  color: #000;
-  border: 1px solid #000;
+  background-color: #020202;
+  color: rgb(255, 255, 255);
+  border: 10px;
   border-radius: 4px;
   cursor: pointer;
-  display: inline-flex;
-  flex-shrink: 0;
   font-size: 20px;
   gap: 8px;
-  justify-content: center;
-  line-height: 1.5;
+  line-height: 10px;
   overflow: hidden;
-  padding: 15px 20px;
+  padding: 20px 0px;
   text-decoration: none;
   text-overflow: ellipsis;
   transition: all .14s ease-out;
@@ -196,62 +85,119 @@
 }
 
 .letschat:hover {
-  box-shadow: 4px 4px 0 #000;
-  transform: translate(-4px,-4px);
+  box-shadow: 10px 10px, #B7A56E);
+  transform: translate(-5px,-5px);
+  background-color: #B7A56E;
 
 }
 .letschat:focus-visible{
-  outline-offset: 1px;
+  outline-offset: 5px;
 
 }
+/* Main Navigation Menu Styling <---------------------- */
 
-@media all and (min-width: 800px) {
-
-.main {
-    flex: 100%;
-     order: 1;
-  }
-  .footer {
-    order: 2;
-  }
+nav {
+    background-color: #fff;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  .main h1{
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
 }
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #000000;
+    display: block;
+    line-height: 2em;
+    padding: 2em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #B7A56E;
+}
+
+
+/* Social Media Icons */
+
  
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-  .main {
-    width: 400px;
-    height: 400px;
-    background-color: orange;
-    color: black;
-  }
-}
- 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
-  .wrapper {
-    text-align: center;
-  }
-   .main {
-    font-size: 40px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-  .main h1 p {
-    font-size: 40px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
 
 /* Footer Styling */
 
 
+
+/* Mobile Responsive Website */
+
+/* Blog Stylesheet */
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.blogleft {   
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.blogright {
+  float: left;
+  width: 30%;
+  padding-left: 10px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
