@@ -29,51 +29,58 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Font Awesome Icons JS Stylesheet -->
+    <script src="https://kit.fontawesome.com/8e0ba3e4a5.js" crossorigin="anonymous"></script>
+
   </head>
 
-   <!-- Navigation Bar-->
+   <!-- Navigation Top Menu-->
   
    <body>
 
       <header>
-        <h1 id="navigation-menu">ElleCodes</h1>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+       <nav>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/work.html">Work</a></li>
+        </ul>
+      </nav>
     </header>
 
         <!-- Main Welcome Text -->
-
-<div class="wrapper">
-     <article class="main">
-          
-           <p>
-          Hi, I'm</p>
-          <h1> Elle Howard</h1>
+      <div class="home-container">
+        <div class="home-box-intro">
+          <p>Hi, I'm</p>
+          <h1>Elle Howard</h1>
            <h3>
-            A creative web developer, designer and digital specialist from Brisbane, Australia.
+            A creative digital specialist and web development student based in Brisbane, Australia.
            </h3>
            <p>
-            I'm passionate about crafting beautiful, responsive and functional websites.
+            I'm passionate about crafting beautifully simple, responsive and functional websites.
           </p>
-
-      <!-- Call to Action Button -->
-
-            <button class="letschat">Let's Chat</button>
-        </article>
-
+          </div>
+        </div>
+ <!-- Call to Action Button -->
+           <button class="letschat" onclick="location.href='/contact.html'">Let's Chat</button>
+          </div>
+        </div>
       <!-- Footer with social media links and copyright  -->
 
-    <footer class="footer">
-    
-        <p> &copy;2022 Elizabeth Howard</p>
-
-    </footer>
+<footer id="footer">
+  <div class="container">
+    <div class="content">
+      <ul class="social">
+       <li><a href="http://twitter.com/ElleCodesThings"><i class="fab fa-twitter-square fa-2xl"></i></a></li>
+       <li><a href="http://linkedin.com/"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
+       <li><a href="http://github.com/ellehoward"><i class="fa-brands fa-github fa-2xl""></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> Designed and built by Elle Howard &copy;2022</p> 
+  </div>
+</footer>
       
 </body>
 </html>
