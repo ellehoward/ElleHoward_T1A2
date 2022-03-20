@@ -1,13 +1,15 @@
+:root {
+ --val-font-color: #212121;  
+ --val-background-color: #e1f3f8;
+ }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  background-color: #e1f3f8;
 
-}
-
-a {
-  text-decoration: none;
 
 }
 
@@ -17,7 +19,7 @@ ul {
 }    
 
 html, body, {
-  background-color: #fff;
+  background-color: #e1f3f8;
   height: 100%;
   text-align: center;
 
@@ -31,7 +33,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
-  color: #333;
+  color: #212121;
   padding: 10px;
   min-height: 100vh;
 
@@ -43,7 +45,11 @@ h1 {
   line-height: 2em;
 }
 
-h3 {
+h2 {
+  font-weight: 600;
+
+}
+  h3 {
   font-size: 20px;
   text-align:center;
   line-height: 2em;
@@ -66,7 +72,7 @@ article {
   width: 100%;
   height: 60vh;
   padding: 0;
-  background: #fff;
+  background: #e1f3f8;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -112,7 +118,7 @@ article {
 /* Main Navigation Menu Styling <---------------------- */
 
 menu {
-    background-color: #fff;
+    background-color: #e1f3f8;
     margin: 0;
     overflow: hidden;
     width: 100%;
@@ -133,7 +139,7 @@ menu ul li {
 }
 
 menu ul li a {
-    color: #000000;
+    color: #212121;
     display: block;
     line-height: 2em;
     padding: 2em;
@@ -331,19 +337,25 @@ figcaption {
 .about-me-elle {
     height: 300px;
     width: 300px;
-    border-radius: 50%;
-    padding: 20px;
+    padding: 0px;
+    border: 2px solid #000000;
+    margin: 20px 20px;
+    box-shadow: 5px 5px;
 }
 
 .about-me-elle:hover {
   opacity: 0.5; 
   color: rgb(183, 165, 110, 0.8);
+   border: 2px solid #B7A56E;
     
 }
 .aboutme {
   width: 100%;
   margin: 1rem auto;
   padding-bottom: 20px;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bold;
 
 }
 .aboutme p {
@@ -351,20 +363,23 @@ figcaption {
   margin: 0;
   padding-bottom: 2rem;
 }
-.aboutme {
-  text-align: center;
-  padding-top: 2rem;
+.aboutme h2 {
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 30px;
 
 }
 #skillslist {
   column-count: 3;
   column-rule:  solid 1px #333;
   list-style-type: none;
+  padding-bottom: 50px;
 
 }
 #skillslist li {
   font-size: xxx-large;
   padding: 30px;
+
 }
 #skillslist li:hover {
   color:#B7A56E;
@@ -373,7 +388,7 @@ figcaption {
 /* Media Breakpoints for About Me */
 
 @media (min-width: 40rem) {
-  
+
 .about-me-elle {
 border-radius: 0%;
 
@@ -384,6 +399,7 @@ border-radius: 0%;
   max-width: 100%;
   margin: 1rem auto;
   padding-bottom: 20px;
+  text-decoration: solid;
   }
 
   article p {
@@ -392,7 +408,8 @@ border-radius: 0%;
   margin: 1rem auto;
   
 }
-  h2 {
+ .aboutme h2 {
+  font-weight: 200;
   text-align: center;
   padding-top: 2rem;
 
@@ -402,7 +419,9 @@ border-radius: 0%;
     max-width: 100%;
     margin: 0 0 1rem 1rem;
 }
- 
+.aboutme h2 {
+  font-weight: 200;
+} 
   }
 }
 ...
