@@ -49,7 +49,8 @@ h2 {
   font-weight: 600;
 
 }
-  h3 {
+
+h3 {
   font-size: 20px;
   text-align:center;
   line-height: 2em;
@@ -88,6 +89,7 @@ article {
 .letschat {
   width: 30vw;
   margin: auto;
+  margin-bottom: 30px;
   outline: 0;
   background-color: #020202;
   color: rgb(255, 255, 255);
@@ -406,15 +408,15 @@ figcaption {
 }
 .aboutme p {
   font-size: 1.25rem;
-  margin: 0;
-  padding-bottom: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 .aboutme h2 {
   font-weight: bold;
   padding-bottom: 30px;
   padding-top: 30px;
-
 }
+
 #skillslist {
   column-count: 3;
   column-rule:  solid 1px #333;
@@ -541,27 +543,6 @@ border-radius: 0%;
 }
 
 
-
-/* My Resume Page Styling */
-
-.myresume {
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: 70%;
-
-}
-.box {
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .box>* {
-        flex: 1 1 80px;
-    }
-}
-
 /* Contact Us */
 
 .contactme-wrapper a {
@@ -632,3 +613,4 @@ border-radius: 0%;
 .contactme-social {
   padding-top: 50px;
 }
+
