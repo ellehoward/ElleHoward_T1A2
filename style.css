@@ -113,6 +113,38 @@ article {
 }
 .letschat:focus-visible{
   outline-offset: 5px;
+}
+
+.letschat-blog {
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30vw;
+  outline: 0;
+  background-color: #020202;
+  color: rgb(255, 255, 255);
+  border: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  gap: 8px;
+  line-height: 10px;
+  overflow: hidden;
+  padding: 20px 0px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+}
+
+.letschat-blog:hover {
+  box-shadow: 10px 10px, #B7A56E);
+  transform: translate(-5px,-5px);
+  background-color: #B7A56E;
+
+}
+.letschat-blog:focus-visible{
+  outline-offset: 5px;
 
 }
 /* Main Navigation Menu Styling <---------------------- */
@@ -230,6 +262,7 @@ padding: 0 20px;
     align-items: center;
     margin: 5px 0px;
     flex-wrap: wrap;
+    background-color: #e1f3f8;
 }
  
 .blog-post{
@@ -248,6 +281,8 @@ padding: 0 20px;
 .blog-image{
     width:100%;
     height: auto;
+    background-color: #ffffff;
+
 }
 .blog-image:hover {
   opacity: 0.5; 
@@ -258,13 +293,16 @@ padding: 0 20px;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    
 }
-.blog-content{
+.blog-content {
+    background-color: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
 }
 .blog-content span{
+    background-color: #ffffff;
     color: #000000;
     font-size: 0.9rem;
     padding-bottom: 10px;
@@ -275,7 +313,8 @@ padding: 0 20px;
     color: #272727;
 }
 .blog-content p{
-    color: #9b9b9b;
+    background-color: #ffffff;
+    color: #000000;
     font-size: 0.9rem;
     display: -webkit-box;
     text-align: left;
@@ -289,45 +328,49 @@ padding: 0 20px;
     color: #0f0f0f;
     font-size: 0.8rem;
     text-align: left;
+    text-decoration: none;
+    background-color: #ffffff;
 }
 
 figcaption {
   font-size: 10px;
   font-style: italic;
   margin-left: 10px;
+  background-color: #ffffff;
 }
 
 #readmore {
     color: #0f0f0f;
     font-size: 1rem;
     text-align: right;
+    background-color: #ffffff;
 }
 .blog-content a:hover{
-    color: #c74242;
-    transition: all ease 0.3s;
+    transform: bold;
+    transition: all ease 0.4s;
 }
 
 /* Media Breakpoints for blog */
  
 @media(max-width:1250px){
  
-    .blog-box{
+    .blog-post{
         width: 300px;
     }
 } 
 @media(max-width:1100px){
-    .blog-box{
+    .blog-post{
         width:70%;
     }
 }
  
 @media(max-width:550px){
    
-    .blog-box{
+    .blog-post{
         margin: 20px 10px;
         width: 100%;
     }
-#blog{
+#myblog{
         padding:20px;
     }
 }
@@ -337,17 +380,20 @@ figcaption {
 .about-me-elle {
     height: 300px;
     width: 300px;
-    padding: 0px;
+    padding: 10px 10px 70px;
     border: 2px solid #000000;
+    background-color: #ffffff;
     margin: 20px 20px;
     box-shadow: 5px 5px;
+    transform: rotate(5deg);
+
 }
 
 .about-me-elle:hover {
   opacity: 0.5; 
   color: rgb(183, 165, 110, 0.8);
    border: 2px solid #B7A56E;
-    
+
 }
 .aboutme {
   width: 100%;
@@ -383,6 +429,72 @@ figcaption {
 }
 #skillslist li:hover {
   color:#B7A56E;
+}
+}
+
+
+.about-me-paris {
+    height: 300px;
+    width: 300px;
+    padding: 10px 10px 70px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    margin: 20px 20px;
+    box-shadow: 5px 5px;
+    transform: rotate(20deg);
+
+}
+
+.about-me-paris:hover {
+  opacity: 0.5; 
+  color: rgb(183, 165, 110, 0.8);
+   border: 2px solid #B7A56E;
+
+}
+
+
+.about-me-iceskating {
+    height: 300px;
+    width: 300px;
+    padding: 10px 10px 70px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    margin: 20px 20px;
+    box-shadow: 5px 5px;
+    transform: rotate(-5deg);
+
+}
+
+.about-me-iceskating:hover {
+  opacity: 0.5; 
+  color: rgb(183, 165, 110, 0.8);
+   border: 2px solid #B7A56E;
+
+}
+
+.about-me-coffee {
+    height: 300px;
+    width: 300px;
+    padding: 10px 10px 70px;
+    border: 2px solid #000000;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    margin: 20px 20px;
+    box-shadow: 5px 5px;
+    transform: rotate(12deg);
+
+}
+
+.about-me-coffee:hover {
+  opacity: 0.5; 
+  color: rgb(183, 165, 110, 0.8);
+   border: 2px solid #B7A56E;
+
+}
+.cta-contact {
+  margin-top: 50px;
+  margin-bottom: 20px;
+
 }
 }
 /* Media Breakpoints for About Me */
@@ -452,6 +564,71 @@ border-radius: 0%;
 
 /* Contact Us */
 
+.contactme-wrapper a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.contactme {
+  width: 100%;
+  margin: 1rem auto;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bold;
+  align-tems:
+
+
+}
+.contactme a {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.contactme h3 {
+  text-align: center;
+}
+.letschat-contact {
+  width: 30vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  outline: 0;
+  background-color: #020202;
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  gap: 8px;
+  line-height: 10px;
+  overflow: hidden;
+  padding: 20px 0px;
+  text-decoration: none;
 
 }
 
+.letschat-contact:hover {
+  box-shadow: 10px 10px, #B7A56E);
+  transform: translate(-5px,-5px);
+  background-color: #B7A56E;
+
+}
+.letschat-contact:focus-visible{
+  outline-offset: 5px;
+
+}
+
+.contactme-container a {
+  height: 200px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.contactme-container h3 {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.contactme-social {
+  padding-top: 50px;
+}
