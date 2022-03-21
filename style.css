@@ -91,8 +91,8 @@ article {
   margin: auto;
   margin-bottom: 30px;
   outline: 0;
-  background-color: #020202;
-  color: rgb(255, 255, 255);
+  background-color: #212121;
+  color: #ffffff;
   border: 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -123,8 +123,8 @@ article {
   margin-bottom: 30px;
   width: 30vw;
   outline: 0;
-  background-color: #020202;
-  color: rgb(255, 255, 255);
+  background-color: #212121;
+  color: #ffffff;
   border: 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -228,7 +228,7 @@ padding: 0 20px;
 }
 
 #footer .social a {
-    color: #020202;
+    color: #212121;
 }
 
 #footer .social a:hover {
@@ -255,7 +255,7 @@ padding: 0 20px;
 }
 .blog-title h1 {
     font-size: 2.2rem;
-    color: #2b2b2b;
+    color: #212121;
     font-weight: 600;
 }
 .blog-wrapper{
@@ -305,18 +305,18 @@ padding: 0 20px;
 }
 .blog-content span{
     background-color: #ffffff;
-    color: #000000;
+    color: #212121;
     font-size: 0.9rem;
     padding-bottom: 10px;
 }
 .blog-content .blog-title{
     font-size: 1.3rem;
     font-weight: 500;
-    color: #272727;
+    color: #212121;
 }
 .blog-content p{
     background-color: #ffffff;
-    color: #000000;
+    color: #212121;
     font-size: 0.9rem;
     display: -webkit-box;
     text-align: left;
@@ -327,7 +327,7 @@ padding: 0 20px;
     margin: 20px 0px;
 }
 .blog-content > a{
-    color: #0f0f0f;
+    color: #212121;
     font-size: 0.8rem;
     text-align: left;
     text-decoration: none;
@@ -342,7 +342,7 @@ figcaption {
 }
 
 #readmore {
-    color: #0f0f0f;
+    color: #212121;
     font-size: 1rem;
     text-align: right;
     background-color: #ffffff;
@@ -383,7 +383,7 @@ figcaption {
     height: 300px;
     width: 300px;
     padding: 10px 10px 70px;
-    border: 2px solid #000000;
+    border: 2px solid #212121;
     background-color: #ffffff;
     margin: 20px 20px;
     box-shadow: 5px 5px;
@@ -573,7 +573,7 @@ border-radius: 0%;
   margin-top: 30px;
   margin-bottom: 30px;
   outline: 0;
-  background-color: #020202;
+  background-color: #212121;
   color: rgb(255, 255, 255);
   border: 0px;
   border-radius: 2px;
