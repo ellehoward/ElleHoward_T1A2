@@ -1,27 +1,32 @@
+/*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Reset
+*  2.0 - 
+*  3.0 - 
+*  4.0 - Navigation
+*  5.0 - Header
+*  6.0 - Body
+*    6.1 - Buttons
+*    6.2 - Imagery
+*  7.0 - Footer
+*/
+
+/* 1.0 ------------- RESET ------------- */
+
 :root {
- --val-font-color: #212121;  
- --val-background-color: #e1f3f8;
- }
+--background-color: #e1f3f8;
+ --black: #212121;  
+ --white: #e1f3f8;
+ --blue: #e1f3f8;
+ --gold: #B7A56E;
+}
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  background-color: #e1f3f8;
-
-
-}
-
-ul {
-  list-style: none;
-
-}    
-
-html, body, {
-  background-color: #e1f3f8;
-  height: 100%;
-  text-align: center;
+  background-color: var(--background-color);
 
 }
 
@@ -33,9 +38,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
-  color: #212121;
+  color: (var(--black));
   padding: 10px;
   min-height: 100vh;
+  text-align:center;
 
 }
 
@@ -46,13 +52,12 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-size: 30px;
 
 }
 
 h3 {
   font-size: 20px;
-  text-align:center;
   line-height: 2em;
  
 }
@@ -63,11 +68,61 @@ p {
   line-height: 2em;
   
 }
-}
+
 article {
   text-align: center;
 
 }
+ul {
+  list-style: none;
+
+
+}
+
+
+
+
+
+
+/* 4. ------------- NAVIGATION MENU ------------- */
+
+nav {
+    background-color: #e1f3f8;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+    color: #212121;
+    display: block;
+    line-height: 2em;
+    padding: 2em;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #B7A56E;
+    border-top-left-radius: 1em 1em; 
+    border-top-right-radius: 1em 1em;  
+}
+small {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+/* 2. ------------- HOME PAGE / INDEX  ------------- */
 
 .home-container {
   width: 100%;
@@ -81,11 +136,11 @@ article {
   align-items: center;
 
 }
-
 .home-box-intro {
   width: 60%;
 }
 
+/* -- Home Page "Let's Chat" Button -- */
 .letschat {
   width: 30vw;
   margin: auto;
@@ -117,85 +172,16 @@ article {
   outline-offset: 5px;
 }
 
-.letschat-blog {
-
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 30vw;
-  outline: 0;
-  background-color: #212121;
-  color: #ffffff;
-  border: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 20px;
-  gap: 8px;
-  line-height: 10px;
-  overflow: hidden;
-  padding: 20px 0px;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  transition: all .14s ease-out;
-  white-space: nowrap;
 }
 
-.letschat-blog:hover {
-  box-shadow: 10px 10px, #B7A56E);
-  transform: translate(-5px,-5px);
-  background-color: #B7A56E;
-
-}
-.letschat-blog:focus-visible{
-  outline-offset: 5px;
-
-}
-/* Main Navigation Menu Styling <---------------------- */
-
-menu {
-    background-color: #e1f3f8;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-menu ul {
-    margin: 0;
-    padding: 0;
-}
-
-menu ul li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-menu ul li a {
-    color: #212121;
-    display: block;
-    line-height: 2em;
-    padding: 2em;
-    text-decoration: none;
-}
-
-menu ul li a:hover {
-    background-color: #B7A56E;
-    border-top-left-radius: 1em 1em; 
-    border-top-right-radius: 1em 1em; 
-    
-}
 
 /* Footer */
 
 #footer {
   position: sticky;
-  top: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-end;
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
@@ -219,6 +205,8 @@ menu ul li a:hover {
   display: flex;
   justify-content: center;
   font-size: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 
 }
 
@@ -242,7 +230,7 @@ padding: 0 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding:20px;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -338,7 +326,12 @@ figcaption {
   font-size: 10px;
   font-style: italic;
   margin-left: 10px;
-  background-color: #ffffff;
+  background-color: inherit;
+}
+
+figure > img:hover {
+  opacity: 0.5; 
+  color: rgb(183, 165, 110, 0.7);
 }
 
 #readmore {
@@ -350,6 +343,38 @@ figcaption {
 .blog-content a:hover{
     transform: bold;
     transition: all ease 0.4s;
+}
+
+.letschat-blog {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30vw;
+  outline: 0;
+  background-color: #212121;
+  color: #ffffff;
+  border: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  gap: 8px;
+  line-height: 10px;
+  overflow: hidden;
+  padding: 20px 0px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+}
+
+.letschat-blog:hover {
+  box-shadow: 10px 10px, #B7A56E);
+  transform: translate(-5px,-5px);
+  background-color: #B7A56E;
+
+}
+.letschat-blog:focus-visible{
+  outline-offset: 5px;
+
 }
 
 /* Media Breakpoints for blog */
@@ -380,14 +405,13 @@ figcaption {
 /* About Me Page */
 
 .about-me-elle {
-    height: 300px;
-    width: 300px;
-    padding: 10px 10px 70px;
-    border: 2px solid #212121;
-    background-color: #ffffff;
-    margin: 20px 20px;
-    box-shadow: 5px 5px;
-    transform: rotate(5deg);
+    background-color: #eee;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.25);
+    transition: -webkit-transform 0.15s linear;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    max-width: 400px;
 
 }
 
@@ -398,7 +422,7 @@ figcaption {
 
 }
 .aboutme {
-  width: 100%;
+  width: 90%;
   margin: 1rem auto;
   padding-bottom: 20px;
   text-align: center;
@@ -407,7 +431,7 @@ figcaption {
 
 }
 .aboutme p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding: 1rem;
   text-align: center;
 }
@@ -431,79 +455,20 @@ figcaption {
 }
 #skillslist li:hover {
   color:#B7A56E;
-}
-}
 
-
-.about-me-paris {
-    height: 300px;
-    width: 300px;
-    padding: 10px 10px 70px;
-    border: 2px solid #000000;
-    background-color: #ffffff;
-    margin: 20px 20px;
-    box-shadow: 5px 5px;
-    transform: rotate(20deg);
 
 }
 
-.about-me-paris:hover {
-  opacity: 0.5; 
-  color: rgb(183, 165, 110, 0.8);
-   border: 2px solid #B7A56E;
-
-}
-
-
-.about-me-iceskating {
-    height: 300px;
-    width: 300px;
-    padding: 10px 10px 70px;
-    border: 2px solid #000000;
-    background-color: #ffffff;
-    margin: 20px 20px;
-    box-shadow: 5px 5px;
-    transform: rotate(-5deg);
-
-}
-
-.about-me-iceskating:hover {
-  opacity: 0.5; 
-  color: rgb(183, 165, 110, 0.8);
-   border: 2px solid #B7A56E;
-
-}
-
-.about-me-coffee {
-    height: 300px;
-    width: 300px;
-    padding: 10px 10px 70px;
-    border: 2px solid #000000;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    margin: 20px 20px;
-    box-shadow: 5px 5px;
-    transform: rotate(12deg);
-
-}
-
-.about-me-coffee:hover {
-  opacity: 0.5; 
-  color: rgb(183, 165, 110, 0.8);
-   border: 2px solid #B7A56E;
-
-}
 .cta-contact {
   margin-top: 50px;
   margin-bottom: 20px;
 
 }
-}
 /* Media Breakpoints for About Me */
 
 @media (min-width: 40rem) {
 
-.about-me-elle {
+.bioimage {
 border-radius: 0%;
 
 }
@@ -515,12 +480,11 @@ border-radius: 0%;
   padding-bottom: 20px;
   text-decoration: solid;
   }
-
+  
   article p {
   text-align: center;
   max-width: 50%;
   margin: 1rem auto;
-  
 }
  .aboutme h2 {
   font-weight: 200;
@@ -532,18 +496,66 @@ border-radius: 0%;
     float: right;
     max-width: 100%;
     margin: 0 0 1rem 1rem;
+
 }
-.aboutme h2 {
-  font-weight: 200;
-} 
+}
+.polaroids {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+  .polaroids li {
+    background-color: #fff;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.25);
+    transition: -webkit-transform 0.15s linear;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    max-width: 400px;
   }
+    .polaroids h3 {
+      width: 100%;
+      text-align: center;
+      line-height: 2.5em;
+      background-color: #fff;
+    }
+    .polaroids img {
+      max-width: 100%;
+      background-color: #fff;
+  }
+    .polaroids p {
+     width: 80%;
+     padding-bottom: 50px;
+     font-size: 1.2rem;
+}
+
+  .polaroids li:nth-of-type(2) {
+    transform: rotate(5deg);
+  }
+
+  .polaroids li:nth-child(3) {
+    transform: rotate(-2deg);
+  }
+  
+  .polaroids li:hover {
+    transform: scale(1.25);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 4;
+    }
+}
+
 }
 ...
 
 }
 
 
-/* Contact Us */
+/* Contact Us Style */
 
 .contactme-wrapper a {
     display: flex;
@@ -613,4 +625,6 @@ border-radius: 0%;
 .contactme-social {
   padding-top: 50px;
 }
+
+/* Projects */
 
