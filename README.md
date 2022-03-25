@@ -52,16 +52,16 @@ The homepage is the sites landing page and from there all other sites are naviga
 
 ### Screenshots
 #### Navbar and Footer (Home Page):  
-![Screenshot](/docs/navbar.png)  
+(/docs/navbar.png)  
 #### Images/About Page:
-![Image1Screenshot](/docs/Images_About_Me_1.png)
-![Image2Screenshot](/docs/Images_About_Me_2.png)
+(/docs/Images_About_Me_1.png)
+(/docs/Images_About_Me_2.png)
 #### Blog Post Cards:  
-![Blog Card Screenshot](/docs/blog_post_cards.png)  
+(/docs/blog_post_cards.png)  
 #### Contact Me:  
-![Contact ME Screenshot](/docs/contact_me.png)  
+(/docs/contact_me.png)  
 #### My Resume:  
-![Resume PDF](/docs/resume_link.png)  
+(/docs/resume_link.png)  
 
 
 ### Technologies for Build Deployment
