@@ -587,7 +587,7 @@ padding: 0 20px;
   color:#B7A56E;
 }
 
-/* 10. ------------- MEDIA BREAKPOINTS ------------- */
+/* 1. ------------- MEDIA BREAKPOINTS ------------- */
 
 /* Media Breakpoints for Blog */
 
@@ -643,3 +643,13 @@ border-radius: 0%;
         padding:20px;
     }
 }
+
+
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+      
+    }
